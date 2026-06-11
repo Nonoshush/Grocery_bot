@@ -3,6 +3,11 @@ import streamlit as st
 import sqlite3
 from datetime import datetime
 
+# Improvements
+#   - leave the store or clear the basket on sending the order
+#   - and maybe make order Id's and ofcourse user Id's
+#   - also maybe make the database online instead of on here
+
 st.image("isle1.jpg", caption="Get your stuff here in Isle 1", width=700, clamp=True)
 
 st.title("Welcome to the Grocery Store")
@@ -157,6 +162,7 @@ else:
 
 # clear basket, send order and leave buttons
 col1, col2, col3 = st.columns(3)
+
 
 with col1:
     if st.button("Clear Basket"):
